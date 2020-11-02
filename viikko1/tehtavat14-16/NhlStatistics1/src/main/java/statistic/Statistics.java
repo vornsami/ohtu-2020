@@ -1,9 +1,11 @@
-package ohtuesimerkki;
+package statistic;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import ohtuesimerkki.Player;
+import ohtuesimerkki.Reader;
 
 public class Statistics {
 

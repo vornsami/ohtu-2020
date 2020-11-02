@@ -1,5 +1,7 @@
 package ohtuesimerkki;
 
+import statistic.Statistics;
+
 public class Main {
     public static void main(String[] args) {
         Statistics stats = new Statistics(new PlayerReader("https://nhlstatisticsforohtu.herokuapp.com/players.txt"));
