@@ -40,14 +40,14 @@ public class KauppaTest {
     @Test
     public void ostoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaan() {
 
-        // tehdään ostokset
+        // tehdaan ostokset
         k.aloitaAsiointi();
         k.lisaaKoriin(1);     // ostetaan tuotetta numero 1 eli maitoa
         k.tilimaksu("pekka", "12345");
 
-        // sitten suoritetaan varmistus, että pankin metodia tilisiirto on kutsuttu
+        // sitten suoritetaan varmistus, etta pankin metodia tilisiirto on kutsuttu
         verify(pankki).tilisiirto(anyString(), anyInt(), anyString(), anyString(),anyInt());   
-        // toistaiseksi ei välitetty kutsussa käytetyistä parametreista
+        // toistaiseksi ei valitetty kutsussa kaytetyista parametreista
     }
     
     @Test
